@@ -11,56 +11,71 @@
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-    
         <title>Lucas C. | Portfólio</title>
     </head>
 <body>
-    <header class="sticky-header">
-        <div class="container">
-            <div class="navbar">
-                <a class="home-button" href="index.html">Lucas C.</a>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="educacao.html">Educação</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
+    <div class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="user.png" alt="Profile" class="profile-img">
+            <h3>Lucas C.</h3>
         </div>
-    </header>
-    <main class="container">
-    <h1>Contact</h1>
-    <img src="mail_icon.png" alt="" width="200px" height="200px">
-    <form action="" method="post">
-        <p>
-            <label for="name">Name:</label>
-            <br>
-            <input type="text" id="name" name="user_name" />
-        </p>
-        <p>
-            <label for="region">Region:</label>
-            <br>
-            <select name="region" id="region">
-                <option value="north">North</option>
-                <option value="center">Center</option>
-                <option value="south">South</option>
-            </select>
-        </p>
-        <p>
-            <label for="mail">Email:</label>
-            <br>
-            <input type="email" id="mail" name="user_email" />
-        </p>
-        <p>
-            <label for="phoneNumber">Phone Number:</label>
-            <br>
-            <input type="tel" id="phoneNumber" name="user_number" />
-        <p>
-          <label for="msg">Message:</label>
-          <br>
-          <textarea id="msg" name="user_message"></textarea>
-        </p>
-        <button type="submit">Enviar</button>
-      </form>
-    </main> 
+        
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="educacao.html">Educação</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="sidebar-contact">
+            <h4>Quick Contact</h4>
+            <form>
+                <input type="email" placeholder="Your email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <h1>Contact</h1>
+        <img src="mail_icon.png" alt="" width="200px" height="200px">
+        <form action="" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="user_name" />
+            </p>
+            <p>
+                <label for="region">Region:</label>
+                <br>
+                <select name="region" id="region">
+                    <option value="north">North</option>
+                    <option value="center">Center</option>
+                    <option value="south">South</option>
+                </select>
+            </p>
+            <p>
+                <label for="mail">Email:</label>
+                <br>
+                <input type="email" id="mail" name="user_email" />
+            </p>
+            <p>
+                <label for="phoneNumber">Phone Number:</label>
+                <br>
+                <input type="tel" id="phoneNumber" name="user_number" />
+            </p>
+            <p>
+                <label for="msg">Message:</label>
+                <br>
+                <textarea id="msg" name="user_message"></textarea>
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
