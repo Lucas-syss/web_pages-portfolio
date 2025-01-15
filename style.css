@@ -183,21 +183,27 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 }
 
 .skill-item img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     transition: transform 0.3s;
+    filter: grayscale(100%);
 }
 
-.skill-item:hover img { transform: translateY(-5px); }
+
+.skill-item:hover img { transform: translateY(-5px); filter: grayscale(0); }
 .skill-item span { font-size: 1.1rem; font-weight: 500; }
 
 .experience-card {
-    display: flex;
+    transition: transform 0.3s;
     align-items: center;
     gap: 30px;
-    max-width: 800px;
+    width: 250px;
+    height: 210px;
     margin: 0 auto;
+    justify-items: center;
 }
+
+.experience-card:hover { transform: translateY(-5px); }
 
 .company-logo { 
     width: 80px; 
@@ -206,7 +212,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 }
 
 .company-name { color: #ccc; margin-bottom: 5px; }
-.duration { font-size: 0.9rem; color: #999; }
+.duration { font-size: 1.1rem; color: #999; padding-top: 5px;}
 
 .social-links {
     display: flex;
@@ -231,11 +237,4 @@ footer {
     margin-top: auto;
 }
 
-@media (max-width: 768px) {
-    .hero-content h1 { font-size: 3rem; }
-    .about-grid { grid-template-columns: 1fr; text-align: center; }
-    .quick-info { justify-content: center; }
-    .experience-card { flex-direction: column; text-align: center; }
-    .main-content.shifted { margin-left: 0; }
-    .skills-container { flex-wrap: wrap; gap: 20px; }
-}
+
