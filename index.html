@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Portfolio">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Lucas Cleminson - Full Stack Developer specializing in web development, JavaScript, React, and modern web technologies">
+        <meta name="keywords" content="full stack developer, web development, JavaScript, React, HTML, CSS, portfolio, Lucas Cleminson">
         <meta name="author" content="Lucas Cleminson">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,17 +11,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        
     
-        <title>Lucas C. | Portfólio</title>
+        <meta property="og:title" content="Lucas Cleminson | Full Stack Developer">
+        <meta property="og:description" content="Portfolio showcasing full stack development projects and skills">
+        <meta property="og:type" content="website">
+    
+        <title>Lucas Cleminson | Web Developer - Portfolio</title>
     </head>
 <body>
-    <div class="menu-btn" onclick="toggleSidebar()">
-        <i class="fa fa-bars"></i>
+    <div class="menu-btn" onclick="toggleSidebar()" >
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
     </div>
 
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <img src="user.png" alt="Profile" class="profile-img">
+            <img src="cat.png" alt="Profile" class="profile-img">
             <h3>Lucas C.</h3>
         </div>
         
@@ -33,10 +38,12 @@
 
         <div class="sidebar-contact">
             <h4>Quick Contact</h4>
-            <form>
-                <input type="email" placeholder="Your email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
+            <form aria-label="Contact form">
+                <input type="email" name="email" placeholder="Your email" required 
+                       aria-label="Your email address">
+                <textarea name="message" placeholder="Message" required 
+                          aria-label="Your message"></textarea>
+                <button type="submit" aria-label="Send message">Send</button>
             </form>
         </div>
     </div>
@@ -53,14 +60,13 @@
             </div>
         </section>
 
-        <section id="aboutme" class="section-padding">
+        <section id="aboutme" class="section-padding fade-in">
             <div class="section-header">
-                
                 <h2>About me...</h2>
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="user.png" alt="Lucas C." class="profile-picture">
+                    <img src="human.png" alt="Lucas C." class="profile-picture">
                 </div>
                 <div class="about-content">
                     <div class="about-text-container">
@@ -72,7 +78,7 @@
                         <div class="quick-info">
                             <div class="info-item">
                                 <span class="info-label">Experience</span>
-                                <span class="info-value">1+ Years</span>
+                                <span class="info-value">2+ Years</span>
                             </div>
                             <div class="info-item">
                                 <span class="info-label">Specialty</span>
@@ -84,7 +90,7 @@
             </div>
         </section>
 
-        <section id="skills" class="section-padding">
+        <section id="skills" class="section-padding fade-in">
             <div class="section-header">
                 <h2>Skills</h2>
             </div>
@@ -103,22 +109,37 @@
                 </div>
             </div>
         </section>
-
-        <section id="experiencia" class="section-padding">
+        <img src="arrow.png" alt="arrow" class="arrow-img">
+        <section id="experiencia" class="section-padding fade-in">
+            
             <div class="section-header">
                 <h2>Experience</h2>
             </div>
-            <div class="experience-card">
-                <img src="kapta.png" alt="Kapta Logo" class="company-logo">
-                <div class="experience-content">
-                    <h3>Backend Developer Intern</h3>
-                    <p class="duration">3 Months</p>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <img src="kapta.png" alt="Kapta Logo" class="company-logo">
+                    <div class="experience-content">
+                        <h3>Backend Developer Intern</h3>
+                        <p class="duration">3 Months</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-content">
+                        <h3>Frontend Developer</h3>
+                        <p class="duration">6 Months</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+
+                    <div class="experience-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="duration">1 Year</p>
+                    </div>
                 </div>
             </div>
-                
         </section>
 
-        <section id="links" class="section-padding">
+        <section id="links" class="section-padding fade-in">
             <div class="section-header">
                 <h2>Connect with me!</h2>
             </div>
