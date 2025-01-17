@@ -10,72 +10,53 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <title>Lucas C. | Portfólio</title>
     </head>
 <body>
-    <div class="menu-btn" onclick="toggleSidebar()">
-        <i class="fa fa-bars"></i>
-    </div>
-
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <img src="user.png" alt="Profile" class="profile-img">
-            <h3>Lucas C.</h3>
-        </div>
-        
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="educacao.html">Educação</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
-        <div class="sidebar-contact">
-            <h4>Quick Contact</h4>
-            <form>
-                <input type="email" placeholder="Your email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
+    <div id="navbar"></div>
 
     <main class="main-content">
         <h1>Contact</h1>
-        <img src="mail_icon.png" alt="" width="200px" height="200px">
-        <form action="" method="post">
-            <p>
-                <label for="name">Name:</label>
+        <img src="./images/mail_icon.png" alt="" width="200px" height="200px">
+        <div class="contact-container">
+            <form action="" method="post">
+                <p>
+                    <!--<label for="name">Name</label>-->
+                    <br>
+                    <input type="text" id="name" name="user_name" placeholder="Your Name" />
+                </p>
+                <p>
+                    <!--<label for="region">Region</label>-->
+                    <br>
+                    <select name="region" id="region" required>
+                        <option value="" selected disabled>Select a region</option>
+                        <option value="north">North</option>
+                        <option value="center">Center</option>
+                        <option value="south">South</option>
+                    </select>
+                </p>
+                <p>
+                    <!--<label for="mail">Email</label>-->
+                    <br>
+                    <input type="email" id="mail" name="user_email" placeholder="Your Email"/>
+                </p>
+                <p>
+                    <!--<label for="phoneNumber">Phone Number</label>-->
+                    <br>
+                    <input type="tel" id="phoneNumber" name="user_number" placeholder="Your Phone Number" />
+                </p>
+                <p>
+                    <!--<label for="msg">Message</label>-->
+                    <br>
+                    <input type="text" placeholder="Type your message here..">
+                </p>
                 <br>
-                <input type="text" id="name" name="user_name" />
-            </p>
-            <p>
-                <label for="region">Region:</label>
-                <br>
-                <select name="region" id="region">
-                    <option value="north">North</option>
-                    <option value="center">Center</option>
-                    <option value="south">South</option>
-                </select>
-            </p>
-            <p>
-                <label for="mail">Email:</label>
-                <br>
-                <input type="email" id="mail" name="user_email" />
-            </p>
-            <p>
-                <label for="phoneNumber">Phone Number:</label>
-                <br>
-                <input type="tel" id="phoneNumber" name="user_number" />
-            </p>
-            <p>
-                <label for="msg">Message:</label>
-                <br>
-                <textarea id="msg" name="user_message"></textarea>
-            </p>
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
+    <div id="footer"></div>
 </html>

@@ -6,15 +6,16 @@ function toggleSidebar() {
     sidebar.classList.toggle('active');
     menuBtn.classList.toggle('active');
     
-    // Toggle between right and left arrow icons
-    if (sidebar.classList.contains('active')) {
-        menuIcon.classList.replace('fa-angle-right', 'fa-angle-left');
+
+    if (!menuIcon.classList.contains("rotateArrow")) {
+        menuIcon.classList.add('rotateArrow');
     } else {
-        menuIcon.classList.replace('fa-angle-left', 'fa-angle-right');
+        menuIcon.classList.remove("rotateArrow")
     }
+    
 } 
 
-// Scroll animation
+
 function handleScrollAnimation() {
     const elements = document.querySelectorAll('.fade-in');
     
@@ -33,5 +34,20 @@ function handleScrollAnimation() {
     });
 }
 
-// Call the function when the page loads
+async function loadNavbar() {
+    const response = await fetch("components/navbar.html");
+    const navbarHtml = await response.text();
+    document.getElementById("navbar").innerHTML = navbarHtml;
+  }
+  
+  async function loadFooter() {
+    const response = await fetch("components/footer.html");
+    const navbarHtml = await response.text();
+    document.getElementById("footer").innerHTML = navbarHtml;
+  }
+  
+  loadFooter();
+  loadNavbar();
+
+
 document.addEventListener('DOMContentLoaded', handleScrollAnimation); 

@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,6 +18,9 @@ h1, h2 {
 h1 { font-size: 3rem; margin-bottom: 20px; }
 h2 { font-size: 2rem; margin-bottom: 10px; }
 
+.subtitle {
+    font-size: 25px;
+}
 .menu-btn {
     position: fixed;
     top: 50%;
@@ -50,6 +53,11 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
     margin-left: 2px;
 }
 
+.rotateArrow {
+    rotate: 180deg;
+    padding-left: 5px;
+}
+
 .menu-btn:hover { background: #575757; }
 
 .sidebar {
@@ -67,7 +75,8 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 }
 
 .sidebar.active { left: 0; }
-.sidebar-header { text-align: center; margin-bottom: 30px; }
+.sidebar-header { text-align: center; margin-top: 20vh; }
+
 
 .profile-img {
     width: 160px;
@@ -95,9 +104,16 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .sidebar-nav a:hover { background: #575757; }
 
+
 .sidebar-contact {
     margin-top: 30px;
     padding: 20px 0;
+    
+}
+
+.sidebar-contact textarea {
+    resize: none;
+    height: 80px;
 }
 
 .sidebar-contact input,
@@ -124,16 +140,49 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .sidebar-contact button:hover { transform: translateY(-2px); }
 
+
+
 .main-content {
     flex: 1;
-    transition: 0.3s;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    
 }
 
 .main-content.shifted { margin-left: auto; }
+
+.contact-container {
+   
+}
+
+.contact-container input, button, select{
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+}
+
+
+.contact-container input {
+    color: white;
+    background-color: #333;
+}
+
+.contact-container input::placeholder {
+    color: white;
+}
+
+.contact-container button {
+    color: white;
+    background-color: #333;
+}
+
+.contact-container select {
+    color: white;
+    background-color: #333;
+}
 
 .hero-section, .about-text-container, .experience-card {
     background: #333;
@@ -144,6 +193,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 }
 
 .hero-section { 
+    background: linear-gradient(180deg, #333 35%, rgba(67, 67, 69, 1) 80%, rgba(112, 112, 112, 1) 100%);
     padding: 100px 20px; 
     position: relative; 
     overflow: hidden; 
@@ -205,7 +255,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 75px;
     margin: 30px 0;
 }
 
@@ -296,6 +346,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
     gap: 30px;
 }
 
+
 .social-link, #links a {
     font-size: 2rem;
     color: #333;
@@ -335,7 +386,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -365,7 +415,7 @@ footer {
     margin-top: 20px;
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 20px;
 }
 

@@ -5,12 +5,12 @@
         <meta name="description" content="Lucas Cleminson - Full Stack Developer specializing in web development, JavaScript, React, and modern web technologies">
         <meta name="keywords" content="full stack developer, web development, JavaScript, React, HTML, CSS, portfolio, Lucas Cleminson">
         <meta name="author" content="Lucas Cleminson">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="./images/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/style.css">
         
     
         <meta property="og:title" content="Lucas Cleminson | Full Stack Developer">
@@ -20,33 +20,7 @@
         <title>Lucas Cleminson | Web Developer - Portfolio</title>
     </head>
 <body>
-    <div class="menu-btn" onclick="toggleSidebar()" >
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-    </div>
-
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <img src="cat.png" alt="Profile" class="profile-img">
-            <h3>Lucas C.</h3>
-        </div>
-        
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="educacao.html">Educação</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
-        <div class="sidebar-contact">
-            <h4>Quick Contact</h4>
-            <form aria-label="Contact form">
-                <input type="email" name="email" placeholder="Your email" required 
-                       aria-label="Your email address">
-                <textarea name="message" placeholder="Message" required 
-                          aria-label="Your message"></textarea>
-                <button type="submit" aria-label="Send message">Send</button>
-            </form>
-        </div>
-    </div>
+   <div id="navbar"></div>
 
     <main class="main-content">
         <section class="hero-section">
@@ -54,7 +28,6 @@
                 <h1>Hi, I'm Lucas</h1>
                 <p class="subtitle">Full-stack Developer</p>
                 <div class="hero-cta">
-                    <a href="#aboutme" class="cta-button">About Me</a>
                     <a href="contacto.html" class="cta-button secondary">Get in Touch</a>
                 </div>
             </div>
@@ -66,7 +39,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="human.png" alt="Lucas C." class="profile-picture">
+                    <img src="./images/human.png" alt="Lucas C." class="profile-picture">
                 </div>
                 <div class="about-content">
                     <div class="about-text-container">
@@ -109,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <img src="arrow.png" alt="arrow" class="arrow-img">
+        <img src="./images/arrow.png" alt="arrow" class="arrow-img">
         <section id="experiencia" class="section-padding fade-in">
             
             <div class="section-header">
@@ -117,7 +90,7 @@
             </div>
             <div class="experience-container">
                 <div class="experience-card">
-                    <img src="kapta.png" alt="Kapta Logo" class="company-logo">
+                    <img src="./images/kapta.png" alt="Kapta Logo" class="company-logo">
                     <div class="experience-content">
                         <h3>Backend Developer Intern</h3>
                         <p class="duration">3 Months</p>
@@ -157,9 +130,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>2025 Lucas Cleminson. &copy; All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <div id="footer"></div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
