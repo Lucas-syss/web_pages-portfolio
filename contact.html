@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucas Cleminson">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Lucas C. | Portfólio</title>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="main-content">
+        <h1>Contact</h1>
+        <img src="./images/mail_icon.png" alt="Contact Icon" width="150px">
+        <div class="contact-container">
+            <form action="" method="post">
+                <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+                <select name="region" id="region" required>
+                    <option value="" selected disabled>Select a region</option>
+                    <option value="north">North</option>
+                    <option value="center">Center</option>
+                    <option value="south">South</option>
+                </select>
+                <input type="email" id="mail" name="user_email" placeholder="Your Email" required>
+                <input type="tel" id="phoneNumber" name="user_number" placeholder="Your Phone Number">
+                <textarea placeholder="Type your message here..." rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
