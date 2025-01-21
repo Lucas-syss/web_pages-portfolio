@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -17,6 +17,12 @@ h1, h2 {
 
 h1 { font-size: 3rem; margin-bottom: 20px; }
 h2 { font-size: 2rem; margin-bottom: 10px; }
+
+
+.hero-name {
+    font-family: "Dancing Script", serif;
+}
+
 
 .subtitle {
     font-size: 25px;
@@ -87,6 +93,11 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .arrow-img {
     padding-top: 10px;
+    mix-blend-mode: multiply;
+}
+
+.mail-img {
+    mix-blend-mode: multiply;
 }
 
 .sidebar-nav {
@@ -140,18 +151,23 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .sidebar-contact button:hover { transform: translateY(-2px); }
 
-
-
 .main-content {
     flex: 1;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    
 }
 
 .main-content.shifted { margin-left: auto; }
+
+.contact-container {
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 60px;
+}
 
 .contact-container:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -164,7 +180,9 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .contact-container input,
 .contact-container select,
+.contact-container textarea,
 .contact-container button {
+    background-color: rgb(230, 230, 230);;
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
@@ -172,12 +190,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.3s ease;
-}
-
-.contact-container input,
-.contact-container select {
-    background-color: #f9f9f9;
-    color: #333;
+    resize: none;
 }
 
 .contact-container input:focus,
@@ -187,15 +200,8 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
     border-color: #333;
 }
 
-.contact-container button {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 .contact-container button:hover {
-    background-color: #555;
+    background-color: #e5e5e5;
     transform: translateY(-3px);
 }
 
@@ -203,18 +209,18 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
     color: #888;
 }
 
-
 .education-container {
     display: flex;
-    flex-direction: column;
     gap: 30px;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .education-item {
-    background-color: #fff;
+    background-color: #333;
+    color: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -223,6 +229,7 @@ h2 { font-size: 2rem; margin-bottom: 10px; }
 
 .education-item:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: translateY(-3px);
 }
 
 .education-duration {
