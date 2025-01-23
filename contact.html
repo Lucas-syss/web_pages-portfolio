@@ -23,17 +23,22 @@
     <main class="main-content">
         <h1>Contact me!</h1>
         <div class="contact-container">
-            <form action="" method="get">
-                <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+            <form id="contactForm" action="" method="get">
+                <div class="error" id="nameError"></div>
+                <input minlength="2" id="name" name="user_name" placeholder="Your Name" required>
+                
                 <select name="region" id="region" required>
                     <option value="" selected disabled>Select a region</option>
                     <option value="north">North</option>
                     <option value="center">Center</option>
                     <option value="south">South</option>
                 </select>
-                <input type="email" id="mail" name="user_email" placeholder="Your Email" required>
-                <input type="tel" id="phoneNumber" name="user_number" placeholder="Your Phone Number" required>
-                <textarea placeholder="Type your message here..." rows="4" required></textarea>
+                <div class="error" id="emailError"></div>
+                <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+                <div class="error" id="phoneError"></div>
+                <input type="tel" id="phone" name="user_number" placeholder="Your Phone Number" required>
+                <div class="error" id="messageError"></div>
+                <textarea id="message" placeholder="Type your message here..." rows="4" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>

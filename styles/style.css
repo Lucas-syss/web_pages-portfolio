@@ -28,6 +28,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+.error {
+    color: rgb(206, 0, 0);
+    
+}
+
 .hero-name {
   font-family: "Dancing Script", serif;
 }
@@ -141,6 +146,8 @@ h2 {
   resize: none;
   height: 80px;
 }
+
+ 
 
 .sidebar-contact input,
 .sidebar-contact textarea {
@@ -520,6 +527,8 @@ footer {
   animation: pulse 1s infinite;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+
 
 @keyframes pulse {
   0% {
